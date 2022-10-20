@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   z-index: 0;
+   color: white;
+}
+
+body {
+   @apply
+   bg-cover
+   bg-no-repeat
+}
+
+nav {
+   box-shadow: 0 2px 5px 1px rgb(33, 33, 33);
+   @apply
+   sticky
+   top-0
+   w-full
+   h-14
+   bg-slate-500
+   flex
+   items-center
+   px-5
+   z-10
+}
+
+nav ul {
+   @apply
+   hidden
+   absolute
+   bg-slate-300
+}
+
+nav .burger {
+   @apply
+   hidden
+   text-white
+   absolute
+   right-1
+}
+
+/* Form */
+.wrapper-outer {
+   @apply
+   py-10
+   px-40
+   bg-[url('../img/border-bg.jpg')]
+   bg-cover
+}
+.wrapper-inner {
+   @apply
+   bg-[url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg')]
+   bg-cover
+   w-full
+   flex
+   gap-10
+   justify-end
+   items-center
+}
+
+.sign-in {
+   background-color: rgba(107, 107, 107, 0.123);
+   @apply
+   flex
+   flex-col
+   border-4
+   border-black
+   p-7
+   my-4
+   gap-5
+}
+
+#login {
+   @apply
+   bg-amber-800
+   rounded-md
+   py-2
+   hover:bg-amber-900
+}
+
+.card-name {
+   @apply
+   text-center
+   text-3xl
+   font-bold
+}
+
+.banner {
+   @apply
+   w-2/3
+}
+
+/* Footer */
+
+footer {
+   @apply
+   bg-slate-500
+   grid
+   grid-cols-3
+   gap-2
+   p-4 
+   sm:py-10
+   sm:gap-4
+}
+
+.box1 {
+   @apply
+   col-span-3
+   md:col-span-1
+}
+
+.box2, .box3 {
+   @apply
+   col-span-2
+   sm:col-span-1
+}
+
+
