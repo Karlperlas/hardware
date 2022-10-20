@@ -572,6 +572,24 @@ video {
   width: 2rem;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 * {
   z-index: 0;
   color: white;
@@ -613,7 +631,7 @@ nav .burger {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* Form */
+/* Form (Sign in)*/
 
 .wrapper-outer {
   background-image: url('../img/border-bg.jpg');
@@ -669,6 +687,34 @@ nav .burger {
 
 .banner {
   width: 66.666667%;
+}
+
+/* Form (Register) */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/border-bg.jpg');
+  background-size: cover;
+}
+
+.register {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg');
+  background-size: cover;
+}
+
+.field {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: grid;
+  width: 83.333333%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 /* Footer */

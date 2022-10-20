@@ -42,7 +42,7 @@ nav .burger {
    right-1
 }
 
-/* Form */
+/* Form (Sign in)*/
 .wrapper-outer {
    @apply
    py-10
@@ -93,6 +93,34 @@ nav .burger {
    w-2/3
 }
 
+/* Form (Register) */
+
+.wrapper {
+   @apply
+   flex
+   justify-center
+   bg-[url('../img/border-bg.jpg')]
+   bg-cover
+}
+
+.register {
+   @apply
+   bg-[url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg')]
+   bg-cover
+   w-3/4
+   flex
+   flex-col
+   items-center
+}
+
+.field {
+   @apply
+   text-black
+   w-5/6
+   grid
+   grid-cols-2
+   my-2
+}
 /* Footer */
 
 footer {
