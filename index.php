@@ -43,7 +43,7 @@
             </div>
 
             <input type="submit" value="Login" name="login" id="login">
-            <a class="register lg:hover:underline" href="pages/register.php">Register a new account</a>
+            <a class="add-account lg:hover:underline" href="pages/register.php">Create new account</a>
 
          </form>
          <div class="banner">

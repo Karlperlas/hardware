@@ -24,26 +24,27 @@
       </div>
    </nav>
    <div class="wrapper">
-      <form class="register" action="../includes/inc.register.php" method="POST">
+      <form class="register my-12 relative" action="../includes/inc.register.php" method="POST">
          <h1 class="text-4xl font-bold">Registration</h1>
          <h1 class="text-2xl font-bold">Personal Information</h1>
          <div class="field">
             <span>First Name: </span>
-            <input class="text" autocomplete="off" type="text" name="userId" id="userId">
+            <input class="textbox" autocomplete="off" type="text" name="userId" id="userId">
          </div>
          <div class="field">
             <span>Middle Name(Optional): </span>
-            <input class="text" autocomplete="off" type="text" name="userId" id="userId">
+            <input class="textbox" autocomplete="off" type="text" name="userId" id="userId">
          </div>
          <div class="field">
             <span>Last Name: </span>
-            <input class="text" autocomplete="off" type="text" name="userId" id="userId">
+            <input class="textbox" autocomplete="off" type="text" name="userId" id="userId">
          </div>
          <div class="field">
             <span>Birth Date: </span>
             <!-- <input class="text" autocomplete="off" type="text" name="userId" id="userId"> -->
             <div>
                <select name="month" id="month" >
+                  <option value="" disabled selected>Select your option</option>
                   <option value="January">January</option>
                   <option value="February">February</option>
                   <option value="March">March</option>
@@ -58,6 +59,7 @@
                   <option value="December">December</option>
                </select>
                <select name="month" id="month" >
+                  <option value="" disabled selected>Select your option</option>
                   <option value="January">January</option>
                   <option value="February">February</option>
                   <option value="March">March</option>
@@ -71,7 +73,8 @@
                   <option value="November">November</option>
                   <option value="December">December</option>
                </select>
-               <select name="month" id="month" >
+               <select name="month" id="month" class="choose-flat__select">
+                  <option value="" disabled selected>Select your option</option>
                   <option value="January">January</option>
                   <option value="February">February</option>
                   <option value="March">March</option>
@@ -101,6 +104,10 @@
             <span>Contact Number: </span>
             <input class="text" autocomplete="off" type="text" name="userId" id="userId">
          </div>
+         <div class="w-11/12 flex justify-end">
+            <button class="text-black hover:text-white bg-amber-800 hover:bg-amber-900 py-2 px-3 rounded-md">NEXT</button>
+         </div>
+         
       </form>
    </div>
          
