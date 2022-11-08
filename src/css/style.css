@@ -678,22 +678,54 @@ nav .burger {
 /* Form (Sign in)*/
 
 .wrapper-outer {
+  display: flex;
+  justify-content: center;
   background-image: url('../img/border-bg.jpg');
   background-size: cover;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper-outer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }
 
 .wrapper-inner {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: flex-end;
-  gap: 2.5rem;
+  justify-content: center;
   background-image: url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg');
   background-size: cover;
+}
+
+@media (min-width: 640px) {
+  .wrapper-inner {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper-inner {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper-inner {
+    gap: 3rem;
+    padding-left: 3rem;
+  }
 }
 
 .sign-in {
@@ -730,7 +762,14 @@ nav .burger {
 } */
 
 .banner {
-  width: 66.666667%;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    display: block;
+    width: 66.666667%;
+  }
 }
 
 /* Form (Register) */
@@ -744,21 +783,31 @@ nav .burger {
 
 .register {
   display: flex;
-  width: 75%;
+  width: 91.666667%;
   flex-direction: column;
   align-items: center;
   background-image: url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg');
   background-size: cover;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .register {
+    width: 60%;
+    padding: 2.5rem;
+  }
 }
 
 .field {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: grid;
-  width: 91.666667%;
-  grid-template-columns: 30% 1fr;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  overflow: visible;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -768,12 +817,38 @@ nav .burger {
   line-height: 1.75rem;
 }
 
+@media (min-width: 1024px) {
+  .field > span {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.field > input {
+  width: 75%;
+}
+
 .field > input,  .field > div > * {
   border-radius: 0.125rem;
   padding: 0.25rem;
 }
 
+@media (min-width: 1024px) {
+  .field > input,  .field > div > * {
+    padding: 0.5rem;
+  }
+}
+
+#year {
+  width: 4rem;
+  padding: 0.25rem;
+}
+
 select {
+  color: black;
+}
+
+option {
   color: black;
 }
 
@@ -835,6 +910,16 @@ footer {
 @media (min-width: 1024px) {
   .lg\:w-1\/5 {
     width: 20%;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:hover\:underline:hover {
