@@ -10,7 +10,7 @@
 </head>
 <body>
    <nav>
-      <a href="index.php">
+      <a href="../index.php">
          <img src="../src/img/logo.png" class="h-11" alt="">
       </a>
       <ul>
@@ -25,8 +25,8 @@
    </nav>
    <div class="wrapper">
       <form class="register my-12 relative" action="../includes/inc.register.php" method="POST">
-         <h1 class="text-4xl font-bold">Registration</h1>
-         <h1 class="text-2xl font-bold">Personal Information</h1>
+         <h1 class="lg:text-5xl text-4xl font-bold">Registration</h1>
+         <h1 class="lg:text-3xl text-2xl font-bold">Personal Information</h1>
          <div class="field">
             <span>First Name: </span>
             <input class="textbox" autocomplete="off" type="text" name="userId" id="userId">
@@ -44,7 +44,7 @@
             <!-- <input class="text" autocomplete="off" type="text" name="userId" id="userId"> -->
             <div>
                <select name="month" id="month" >
-                  <option value="" disabled selected>Select your option</option>
+                  <option value="" disabled selected>Month</option>
                   <option value="January">January</option>
                   <option value="February">February</option>
                   <option value="March">March</option>
@@ -58,42 +58,52 @@
                   <option value="November">November</option>
                   <option value="December">December</option>
                </select>
-               <select name="month" id="month" >
-                  <option value="" disabled selected>Select your option</option>
-                  <option value="January">January</option>
-                  <option value="February">February</option>
-                  <option value="March">March</option>
-                  <option value="April">April</option>
-                  <option value="May">May</option>
-                  <option value="June">June</option>
-                  <option value="July">July</option>
-                  <option value="August">August</option>
-                  <option value="September">September</option>
-                  <option value="October">October</option>
-                  <option value="November">November</option>
-                  <option value="December">December</option>
+               <select name="day" id="day" >
+                  <option value="" disabled selected>Day</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                  <option value="6"></option>
+                  <option value="7"></option>
+                  <option value="8"></option>
+                  <option value="9"></option>
+                  <option value="10"></option>
+                  <option value="11"></option>
+                  <option value="12"></option>
+                  <option value="13"></option>
+                  <option value="14"></option>
+                  <option value="15"></option>
+                  <option value="16"></option>
+                  <option value="17"></option>
+                  <option value="18"></option>
+                  <option value="19"></option>
+                  <option value="20"></option>
+                  <option value="21"></option>
+                  <option value="22"></option>
+                  <option value="23"></option>
+                  <option value="24"></option>
+                  <option value="25"></option>
+                  <option value="26"></option>
+                  <option value="27"></option>
+                  <option value="28"></option>
+                  <option value="29"></option>
+                  <option value="30"></option>
+                  <option value="31"></option>
                </select>
-               <select name="month" id="month" class="choose-flat__select">
-                  <option value="" disabled selected>Select your option</option>
-                  <option value="January">January</option>
-                  <option value="February">February</option>
-                  <option value="March">March</option>
-                  <option value="April">April</option>
-                  <option value="May">May</option>
-                  <option value="June">June</option>
-                  <option value="July">July</option>
-                  <option value="August">August</option>
-                  <option value="September">September</option>
-                  <option value="October">October</option>
-                  <option value="November">November</option>
-                  <option value="December">December</option>
-               </select>
+               <input class="textbox" autocomplete="off" type="text" name="year" id="year" placeholder="Year">
             </div>
+         </div>
+         <div class="field">
+            <span>Age: </span>
+            <input class="textbox" autocomplete="off" type="text" name="userId" id="userId">
          </div>
          <div class="field">
             <span>Gender: </span>
             <div>
                <select class="w-2/5" name="gender" id="">
+                  <option value="" disabled selected>Choose gender</option>
                   <option value="male">Male</option>
                   <option value="femail">Female</option>
                   <option value="other">Other</option>

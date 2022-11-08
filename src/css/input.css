@@ -44,8 +44,12 @@ nav .burger {
 /* Form (Sign in)*/
 .wrapper-outer {
    @apply
-   py-10
-   px-40
+   flex
+   justify-center
+   md:py-10
+   md:px-32
+   px-8
+   py-8
    bg-[url('../img/border-bg.jpg')]
    bg-cover
 }
@@ -54,9 +58,15 @@ nav .burger {
    bg-[url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg')]
    bg-cover
    w-full
+   sm:w-3/5
+   lg:w-full
    flex
-   gap-10
-   justify-end
+   lg:pl-4
+   lg:gap-4
+   xl:pl-12
+   xl:gap-12
+   lg:justify-end
+   justify-center
    items-center
 }
 
@@ -89,7 +99,9 @@ nav .burger {
 
 .banner {
    @apply
-   w-2/3
+   hidden
+   lg:block
+   lg:w-2/3
 }
 
 /* Form (Register) */
@@ -104,38 +116,60 @@ nav .burger {
 
 .register {
    @apply
+   md:w-3/5
+   md:p-10
    bg-[url('../img/variety-handy-tools-dark-background-labor-day-background-concept.jpg')]
+   /* bg-red-500 */
    bg-cover
-   w-3/4
+   w-11/12
    flex
    flex-col
    items-center
+   px-2
    py-5
 }
 
 .field {
    @apply
    text-black
-   w-11/12
+   w-full
    grid
-   grid-cols-[30%_1fr]
+   grid-cols-1
    my-2
+   overflow-visible
 }
 
 .field > span {
    @apply
    text-lg
+   lg:text-3xl
+}
+
+.field > input {
+   @apply
+   w-3/4
 }
 
 .field > input, .field > div > * {
    @apply
    p-1
+   lg:p-2
    rounded-sm
+}
+
+#year{
+   @apply
+   w-16
+   p-1
 }
 
 select {
   color: black;
 }  
+
+option {
+   color: black;
+}
 /* Footer */
 
 footer {
